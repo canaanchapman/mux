@@ -30,4 +30,4 @@ jobs:
       run: |
         echo "::add-mask::${{ secrets.MM_KEY }}"
         cd "$MM_Install"
-        ./MerlyMentor --github-actions -D ${{github.workspace}}/MP-CodeCheck/src -r MerlyMentor check
+        ./MerlyMentor --github-actions -D ${{github.workspace}} check
